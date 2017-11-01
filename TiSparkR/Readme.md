@@ -18,7 +18,8 @@ Note that you should replace the `TiSpark` jar path with your own.
 > ti <- createTiContext(spark)
 # Map TiContext to database:tpch_test
 > tidbMapDatabase(ti, "tpch_test")
-# Run query
+
+# Run a sql query
 > customers <- sql("select * from customer")
 # Print schema
 > printSchema(customers)
@@ -31,8 +32,10 @@ root
  |-- c_acctbal: decimal(15,2) (nullable = true)
  |-- c_mktsegment: string (nullable = true)
  |-- c_comment: string (nullable = true)
+ 
 # Run a count query
 > count <- sql("select count(*) from customer")
+# Print count result
 > head(count)
   count(1)
 1      150
