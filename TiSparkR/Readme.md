@@ -9,6 +9,7 @@ A thin layer build for supporting R language with TiSpark
 ./bin/sparkR --jars /where-ever-it-is/tispark-0.1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 Note that you should replace the `TiSpark` jar path with your own.
+ 
 4. Use as below in your R console:
 ```R
 # import tisparkR library
